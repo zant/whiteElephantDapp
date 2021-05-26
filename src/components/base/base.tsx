@@ -46,7 +46,7 @@ export const Section = styled.section`
   margin-bottom: 24px;
 `
 
-export const SectionRow = styled.div<{ justifyContent: 'center' | 'space-between' }>`
+export const SectionRow = styled.div<{ justifyContent?: 'center' | 'space-between' }>`
   display: flex;
   justify-content: ${({ justifyContent }) => justifyContent || 'space-between'};
   align-items: center;
