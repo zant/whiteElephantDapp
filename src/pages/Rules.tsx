@@ -21,7 +21,7 @@ import requirements from '../static/requirements.json'
 const STAKING_CONTRACT = '0x00000000219ab540356cBB839Cbe05303d7705Fa'
 
 interface Item {
-  item: string
+  text: string
   subItems?: Item[]
 }
 
@@ -30,16 +30,16 @@ const requirementsData: Item[] = requirements.data
 
 const EnumeratedList: React.FC<{ data: Item[] }> = ({ data }) => (
   <List>
-    {data.map(({ item, subItems }, index) => (
+    {data.map(({ text, subItems }, index) => (
       <>
         <Item>
           <b>{`${index + 1}. `}</b>
-          {`${item}`}
+          {`${text}`}
         </Item>
         {subItems &&
-          subItems.map(({ item }) => (
+          subItems.map(({ text }) => (
             <List>
-              <Item sub>{`• ${item}`}</Item>
+              <Item sub>{`• ${text}`}</Item>
             </List>
           ))}
       </>

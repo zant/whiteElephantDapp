@@ -1,37 +1,37 @@
 {
   "data": [
-    { "item": "Every player deposits a ERC20 token of their choice into the smart contract." },
+    { "text": "Every player deposits a ERC20 token of their choice into the smart contract." },
     {
-      "item": "Every gift will be checked when depositing to ensure that it fits the requirements (ERC20, value amount, etc.)"
+      "text": "Every gift will be checked when depositing to ensure that it fits the requirements (ERC20, value amount, etc.)"
     },
     {
-      "item": "The game cannot start until the required number of players required have joined. (20 players would be a great starting point for this game)"
+      "text": "The game cannot start until the required number of players required have joined. (20 players would be a great starting point for this game)"
     },
-    { "item": "Each player will be assigned a random number from 1 to the number of players." },
+    { "text": "Each player will be assigned a random number from 1 to the number of players." },
     {
-      "item": "Each gift must also have an assigned random number and it’s gonna be wrapped. When a gift is \"wrapped,\" it loses most of its identifying information. (Some tweaks needed here so gift givers can't cheat.)"
-    },
-    {
-      "item": "The person who was randomly chosen to be the first player will choose a random gift and unwrap it. This reveals what type of ERC token and value it is to all members of the gift exchange."
+      "text": "Each gift must also have an assigned random number and it’s gonna be wrapped. When a gift is \"wrapped,\" it loses most of its identifying information. (Some tweaks needed here so gift givers can't cheat.)"
     },
     {
-      "item": "Every subsequent player can either steal one of the previously opened gifts from another player or unwrap a new gift."
+      "text": "The person who was randomly chosen to be the first player will choose a random gift and unwrap it. This reveals what type of ERC token and value it is to all members of the gift exchange."
     },
     {
-      "item": "If a player steals a gift :",
+      "text": "Every subsequent player can either steal one of the previously opened gifts from another player or unwrap a new gift."
+    },
+    {
+      "text": "If a player steals a gift :",
       "subItems": [
         {
-          "item": "The gift will be marked as stolen 1 time; after 3 times, it can’t be stolen anymore."
+          "text": "The gift will be marked as stolen 1 time; after 3 times, it can’t be stolen anymore."
         },
         {
-          "item": "The player who got his gift stolen can unwrap a new gift or steal another gift. The player can’t steal a gift back right away (i.e., a gift that was just stolen from him)"
+          "text": "The player who got his gift stolen can unwrap a new gift or steal another gift. The player can’t steal a gift back right away (i.e., a gift that was just stolen from him)"
         }
       ]
     },
-    { "item": "The game continues until every player has chosen a gift, in which case the gifts are distributed." },
-    { "item": "Player #1 takes one more turn at the end, since he started the game without having a chance to steal" },
+    { "text": "The game continues until every player has chosen a gift, in which case the gifts are distributed." },
+    { "text": "Player #1 takes one more turn at the end, since he started the game without having a chance to steal" },
     {
-      "item": "The game ends"
+      "text": "The game ends"
     }
   ]
 }
