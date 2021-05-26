@@ -6,8 +6,6 @@ import { Label } from '../typography/Label'
 import { TextInline } from '../typography/Text'
 import { Title } from '../typography/Title'
 
-
-
 export function Home() {
   return (
     <MainContentHome>
@@ -16,14 +14,12 @@ export function Home() {
           <SectionRow>
             <Title>White Elephant exchange</Title>
           </SectionRow>
-          <ContentBlock>
-          </ContentBlock>
+          <ContentBlock></ContentBlock>
         </Section>
       </Container>
-    </ MainContentHome>
+    </MainContentHome>
   )
 }
-
 
 const MainContentHome = styled(MainContent)`
   background-image: white;

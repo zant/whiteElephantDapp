@@ -14,13 +14,12 @@ export const Colors = {
     100: '#FFF4D4',
   },
   Red: { 400: '#F87171' },
-  Purple: {400: '#4b65e0'},
-  Salmon: {100: "#fda8a8"}
+  Purple: { 400: '#4b65e0' },
+  Salmon: { 100: '#fda8a8' },
 }
 
 export const Fonts = {
   Helvetica: '"HelveticaNeue", sans-serif',
-  
 }
 
 export const Shadows = {

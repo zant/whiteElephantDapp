@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom'
 import { Page } from './components/base/base'
 import { GlobalStyle } from './global/GlobalStyle'
 
-
 import { Play } from './pages/Play'
 import { Rules } from './pages/Rules'
 import { Home } from './pages/Home'
