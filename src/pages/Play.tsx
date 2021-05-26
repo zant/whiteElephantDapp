@@ -5,7 +5,7 @@ import { Container, ContentBlock, ContentRow, MainContent, Section, SectionRow }
 import { Label } from '../typography/Label'
 import { TextInline } from '../typography/Text'
 import { Title } from '../typography/Title'
-
+import { TopBar } from '../components/TopBar'
 
 
 const STAKING_CONTRACT = '0x00000000219ab540356cBB839Cbe05303d7705Fa'
@@ -17,6 +17,7 @@ export function Play() {
 
   return (
     <MainContent>
+      <TopBar />
       <Container>
         <Section>
           <SectionRow>

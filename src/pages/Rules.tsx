@@ -5,6 +5,7 @@ import { Container, ContentBlock, ContentRow, MainContent, Section, SectionRow }
 import { Label } from '../typography/Label'
 import { TextInline } from '../typography/Text'
 import { Title } from '../typography/Title'
+import { TopBar } from '../components/TopBar'
 
 
 
@@ -17,6 +18,7 @@ export function Rules() {
 
   return (
     <MainContent>
+      <TopBar />
       <Container>
         <Section>
           <SectionRow>

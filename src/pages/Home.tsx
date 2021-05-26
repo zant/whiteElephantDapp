@@ -1,12 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 import { Container, ContentBlock, ContentRow, MainContent, Section, SectionRow } from '../components/base/base'
 import { Label } from '../typography/Label'
 import { TextInline } from '../typography/Text'
 import { Title } from '../typography/Title'
-
 
 
 
@@ -19,7 +17,6 @@ export function Home() {
             <Title>White Elephant exchange</Title>
           </SectionRow>
           <ContentBlock>
-
           </ContentBlock>
         </Section>
       </Container>

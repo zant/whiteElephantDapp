@@ -6,7 +6,6 @@ export const Page = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
-  padding-top: ${Sizes.headerHeight};
   height: 100%;
   min-height: 100vh;
 `
@@ -34,6 +33,7 @@ export const MainContent = styled.main`
   height: 100%;
   min-height: calc(100vh - ${Sizes.headerHeight});
   background-image: ${Gradients.bodyBackground};
+  padding-top: ${Sizes.headerHeight};
 `
 
 export const Section = styled.section`
