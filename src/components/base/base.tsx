@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { BorderRad, Colors, Gradients, Shadows, Sizes } from '../../global/styles'
 import { Title } from '../../typography/Title'
 
@@ -43,7 +43,7 @@ export const Section = styled.section`
   width: 100%;
   height: 100%;
   margin-top: 24px;
-  margin-bottom: 60px;
+  margin-bottom: 24px;
 `
 
 export const SectionRow = styled.div`
@@ -74,4 +74,19 @@ export const ContentBlock = styled.div`
   border-radius: ${BorderRad.s};
   box-shadow: ${Shadows.main};
   padding: 32px 32px;
+`
+
+export const List = styled.ul`
+  list-style-type: none;
+`
+
+export const Item = styled.li<{ sub?: boolean }>`
+  margin: 10px 0;
+  line-height: 1.5rem;
+
+  ${({ sub }) =>
+    sub &&
+    css`
+      margin-left: 1rem;
+    `}
 `

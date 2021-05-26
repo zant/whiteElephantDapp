@@ -1,0 +1,11 @@
+{
+  "data": [
+    { "text": "Gifts must be ERC20 tokens" },
+    {
+      "text": "The number of participants is limited and set when the smart contract is deployed. The game can be invite only or open to everybody until it reaches the required number of participants."
+    },
+    {
+      "text": "Whoever deploys the smart contract can choose a minimum or/and a maximum value for every gift. If this option is set the value of the gift is checked from Chainlink oracles at the moment of submission and the gift can be approved or rejected."
+    }
+  ]
+}
