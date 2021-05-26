@@ -1,6 +1,6 @@
 export const Colors = {
   Black: {
-    900: '#23242A',
+    900: '#000000',
     200: '#DDE2EB',
   },
   Gray: {
@@ -14,10 +14,13 @@ export const Colors = {
     100: '#FFF4D4',
   },
   Red: { 400: '#F87171' },
+  Purple: {400: '#4b65e0'},
+  Salmon: {100: "#fda8a8"}
 }
 
 export const Fonts = {
   Helvetica: '"HelveticaNeue", sans-serif',
+  
 }
 
 export const Shadows = {
@@ -30,7 +33,7 @@ export const Sizes = {
 }
 
 export const Gradients = {
-  bodyBackground: `linear-gradient(180deg, ${Colors.Yellow[100]}, ${Colors.White})`,
+  bodyBackground: `linear-gradient(180deg, ${Colors.Purple[400]}, ${Colors.White})`,
 }
 
 export const Transitions = {

@@ -10,7 +10,7 @@ import { Title } from '../typography/Title'
 
 const STAKING_CONTRACT = '0x00000000219ab540356cBB839Cbe05303d7705Fa'
 
-export function Balance() {
+export function Rules() {
   const { account } = useEthers()
   const userBalance = useEtherBalance(account)
   const stakingBalance = useEtherBalance(STAKING_CONTRACT)

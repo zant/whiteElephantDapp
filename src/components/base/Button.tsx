@@ -24,7 +24,7 @@ export const Button = styled.button`
 
   &:hover,
   &:focus {
-    background-color: ${Colors.Black[900]};
-    color: ${Colors.Yellow[100]};
+    background-color: ${Colors.Salmon[100]};
+    color: ${Colors.Black[900]};
   }
 `

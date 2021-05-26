@@ -3,6 +3,11 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { Colors, Shadows, Sizes, Transitions } from '../global/styles'
 import { HeaderContainer } from './base/base'
+import { AccountButton } from '../components/account/AccountButton'
+import mainLogo from "../assets/images/white-elephant66x50.svg"
+
+
+
 
 export function TopBar() {
   return (
@@ -10,38 +15,38 @@ export function TopBar() {
       <HeaderContainer>
         <HeaderNav>
           <ToMain href="/">
-            <span>white elephant</span>
-            <ToMainBottom>
-              Ethereum <Handshaking>🤝</Handshaking> React
-            </ToMainBottom>
+            <LogoSvg />
           </ToMain>
           <HeaderNavLinks>
-            <HeaderLink activeClassName="active-page" to="/balance">
+            <HeaderLink activeClassName="active-page" to="/play">
               {' '}
-              Balance{' '}
+              Play{' '}
             </HeaderLink>
-            <HeaderLink activeClassName="active-page" to="/block">
+            <HeaderLink activeClassName="active-page" to="/rules">
               {' '}
-              Block{' '}
+              Rules{' '}
             </HeaderLink>
-            <HeaderLink activeClassName="active-page" to="/tokens">
+            {/* <HeaderLink activeClassName="active-page" to="/tokens">
               {' '}
               Tokens{' '}
-            </HeaderLink>
-            <HeaderLink activeClassName="active-page" to="/send">
+            </HeaderLink> */}
+            {/* <HeaderLink activeClassName="active-page" to="/send">
               {' '}
               Send Ether{' '}
             </HeaderLink>
             <HeaderLink activeClassName="active-page" to="/transactions">
               {' '}
               Transactions{' '}
-            </HeaderLink>
+            </HeaderLink> */}
           </HeaderNavLinks>
         </HeaderNav>
       </HeaderContainer>
+      <AccountButton />
     </Header>
   )
 }
+
+
 
 const Header = styled.header`
   display: flex;
@@ -70,31 +75,22 @@ const ToMain = styled.a`
   line-height: 24px;
   font-weight: 700;
   transition: ${Transitions.all};
+  margin-top: 15px;
+  margin-left: 40px;
 
-  &:hover {
-    color: ${Colors.Yellow[500]};
-  }
 `
 
-const ToMainBottom = styled.span`
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 4px;
-  align-items: center;
-  width: fit-content;
-  font-size: 10px;
-  line-height: 14px;
-  font-weight: 500;
-`
 
-const Handshaking = styled.span`
-  letter-spacing: -0.3em;
+const LogoSvg = styled.img`
 `
+LogoSvg.defaultProps = {
+  src: mainLogo,
+}
 
 const HeaderNavLinks = styled.div`
   display: grid;
   position: absolute;
-  left: 50%;
+  left: 60%;
   grid-auto-flow: column;
   align-items: center;
   grid-column-gap: 20px;
@@ -111,8 +107,8 @@ const HeaderLink = styled(NavLink)`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10px;
-  font-size: 12px;
+  padding: 10px 20px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -125,14 +121,14 @@ const HeaderLink = styled(NavLink)`
     bottom: 0;
     width: calc(100% - 20px);
     height: 2px;
-    background-color: ${Colors.Yellow[500]};
+    background-color: ${Colors.Salmon[100]};
     transform: scaleX(0);
     transform-origin: 50% 50%;
     transition: ${Transitions.all};
   }
 
   &:hover {
-    color: ${Colors.Yellow[500]};
+    color: ${Colors.Purple[400]};
 
     &:after {
       transform: scaleX(1);

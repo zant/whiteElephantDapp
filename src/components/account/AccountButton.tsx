@@ -28,11 +28,14 @@ export const AccountButton = () => {
 const Account = styled.div`
   display: flex;
   align-items: center;
+  margin-right: 30px;
 `
 
 const LoginButton = styled(Button)`
   float: right;
-  background-color: ${Colors.Yellow[100]};
+  background-color: ${Colors.Black[900]};
+  color: white;
+  border: none;
 `
 
 const AccountLabel = styled.div`
@@ -45,10 +48,10 @@ const AccountLabel = styled.div`
   padding-right: 40px;
   display: flex;
 
-  background-color: ${Colors.Yellow[200]};
+  background-color: ${Colors.Purple[400]};
   border-radius: 20px;
   &:hover {
     background-color: black;
-    color: ${Colors.Yellow[100]};
+    color: ${Colors.Black[900]};
   }
 `
