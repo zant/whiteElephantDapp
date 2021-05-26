@@ -90,3 +90,8 @@ export const Item = styled.li<{ sub?: boolean }>`
       margin-left: 1rem;
     `}
 `
+
+export const Separator = styled.div<{ height?: number; unit?: 'px' | 'rem' }>`
+  height: ${({ height, unit }) => `${height}${unit || 'rem'}` || '1rem'};
+  width: 100%;
+`
